@@ -11,6 +11,7 @@
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous"
     />
+
     <style>
       body {
         margin: 0;
@@ -271,6 +272,7 @@
 
       }
     </style>
+    
   </head>
 
   <body>
@@ -305,26 +307,31 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <form action="/login.html">
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href=""
+                  >
+                    <button type="submit" class="btn btn-primary">
+                      SignIn
+                    </button></a>
+                </li>
+              </form>
+              <form action="/Register.html">
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  aria-current="page"
-                  href="/login.html"
-                >
-                  <button type="submit" class="btn btn-primary">
-                    SignIn
-                  </button></a
-                >
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/Register.html"
+                <a class="nav-link" href=""
                   ><button type="submit" class="btn btn-primary">
                     SignUp
-                  </button></a
-                >
+                  </button></a>
+                
               </li>
+              </form>
+
+              <form action="">
               <li class="nav-item">
                 <a class="nav-link" href="#"
                   ><button type="submit" class="btn btn-danger">
@@ -332,7 +339,9 @@
                   </button></a
                 >
               </li>
+              </form>
             </ul>
+
             <form class="d-flex mt-3" role="search">
               <input
                 class="form-control me-2"
